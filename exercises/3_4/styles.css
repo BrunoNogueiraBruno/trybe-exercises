@@ -15,5 +15,27 @@ h1 {
 
 /*----Article---*/
 article {
+    padding: 30px;
     background-color: orange;
+}
+
+article h2 {
+    font-size: 2em;
+}
+
+.first_sec {
+    background-color: palegoldenrod;
+    display: inline-block;
+}
+
+.first_sex h2 {
+    font-size: 1.5em;
+}
+
+.first_sec img {
+    margin: 10px;
+    display: inline-block;
+    height: 300px;
+    border-radius: 3%;
+    float: left;
 }
