@@ -64,3 +64,15 @@ article h2 {
     border-radius: 3%;
     float: left;
 }
+
+.first_sec td {
+    border-bottom: 2px solid #000;
+}
+
+.first_sec table {
+    border: 2px solid #000;
+}
+
+.first_column {
+    background-color: seagreen;
+}
