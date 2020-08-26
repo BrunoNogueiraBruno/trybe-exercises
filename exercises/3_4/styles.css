@@ -42,7 +42,12 @@ article {
     background-color: orange;
 }
 
+article p {
+    font-size: 1.5em;
+}
+
 article h2 {
+    text-align: center;
     margin-top: 0;
     font-size: 2em;
 }
@@ -51,10 +56,13 @@ article h2 {
     padding: 30px;
     background-color: palegoldenrod;
     display: inline-block;
+    text-align: justify;
 }
 
 .first_sec h2 {
-    font-size: 1.5em;
+    margin-bottom: -10px;
+    text-align: center;
+    font-size: 2em;
 }
 
 .first_sec img {
@@ -70,9 +78,10 @@ article h2 {
 }
 
 .first_sec table {
-    border: 2px solid #000;
+    margin: 10px;
+    height: 250px;
+    float: right;
 }
-
 .first_column {
     background-color: seagreen;
 }
