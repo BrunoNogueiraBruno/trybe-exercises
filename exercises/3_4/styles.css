@@ -29,6 +29,12 @@ li {
 /*--------------*/
 /*--------------*/
 
+.hero {
+    height: 50vh;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b5/Odontodactylus_scyllarus1.jpg");
+    background-size: 100%;
+    background-position-y: 30%;
+}
 
 /*----Article---*/
 article {
