@@ -4,17 +4,17 @@ body {
 
 /*----Header----*/
 header {
-    background-color: yellow;
+    background-color: rgb(68, 112, 81);
     text-align: center;
 }
 
 h1 {
-    color: blue;
+    color: whitesmoke;
 }
 
 /*----Nav-------*/
 nav {
-    background-color: palegreen;
+    background-color: rgb(88, 141, 104);
     text-align: center;
 }
 ul {
@@ -40,7 +40,7 @@ li {
 /*----Article---*/
 article {
     padding: 30px;
-    background-color: orange;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 article p {
@@ -61,14 +61,17 @@ article h2 {
 /*----First-Section---*/
 
 .first_sec {
+    margin-bottom: 5px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
     padding: 30px;
-    background-color: palegoldenrod;
+    background-color: whitesmoke;
     display: inline-block;
+    text-align: center;
+    
 }
 
 .first_sec h2 {
     margin-bottom: -10px;
-    text-align: center;
     font-size: 2em;
 }
 
@@ -95,14 +98,30 @@ article h2 {
 /*----Second-Section---*/
 
 .second_sec {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
     padding: 30px;
     padding-top: 0px;
-    background-color: aqua;
+    background-color: whitesmoke;
     display: inline-block;
     text-align: center;
+    width: 70%;
 }
 
 .second_sec img {
     display: inline-block;
     height: 250px;
+}
+
+
+/*----Third-Section---*/
+
+.third_sec {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    padding-top: 0px;
+    background-color: whitesmoke;
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    position: relative;
 }
