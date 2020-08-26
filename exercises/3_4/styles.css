@@ -24,6 +24,7 @@ ul {
 li {
     display: inline-block;
     margin-left: 10px;
+    font-size: 1.5em;
 }
 /*--------------*/
 /*--------------*/
@@ -36,10 +37,12 @@ article {
 }
 
 article h2 {
+    margin-top: 0;
     font-size: 2em;
 }
 
 .first_sec {
+    padding: 30px;
     background-color: palegoldenrod;
     display: inline-block;
 }
@@ -51,7 +54,7 @@ article h2 {
 .first_sec img {
     margin: 10px;
     display: inline-block;
-    height: 300px;
+    height: 250px;
     border-radius: 3%;
     float: left;
 }
