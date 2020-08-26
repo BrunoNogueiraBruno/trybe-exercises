@@ -31,9 +31,10 @@ li {
 
 .hero {
     height: 50vh;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b5/Odontodactylus_scyllarus1.jpg");
+    background-image: url("https://pa1.narvii.com/6502/f8835f952d490427c35f790a92c327d198e09ecb_hq.gif");
     background-size: 100%;
-    background-position-y: 30%;
+    background-position-y: 50%;
+    filter: blur(2px);
 }
 
 /*----Article---*/
@@ -51,6 +52,8 @@ article h2 {
     margin-top: 0;
     font-size: 2em;
 }
+
+/*----First-Section---*/
 
 .first_sec {
     padding: 30px;
@@ -84,4 +87,14 @@ article h2 {
 }
 .first_column {
     background-color: seagreen;
+}
+
+/*----Second-Section---*/
+
+.second_sec {
+    padding: 30px;
+    padding-top: 0px;
+    background-color: aqua;
+    display: inline-block;
+    text-align: justify;
 }
