@@ -19,5 +19,8 @@ switch(pieceLowerCase){
     break;
   case 'rainha':
     console.log("A rainha não tem limitação de casas e pode se mover para todas as direções");
-    break
-}
+    break;
+  default:
+    console.log("Erro, peça inválida!");
+    break;
+};
