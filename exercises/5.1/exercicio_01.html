@@ -44,6 +44,7 @@
         <button type="button" onclick="changeBackgroundColor2()">Exercicio 3</button>
         <button type="button" onclick="titleCorrection()">Exercicio 4</button>
         <button type="button" onclick="textCaps()">Exercicio 5</button>
+        <button type="button" onclick="showParagraphs()">Exercicio 6</button>
         
       </div>
     </div>
@@ -79,6 +80,13 @@
         paragraph.innerHTML = paragraph.innerHTML.toUpperCase();
       }
       
+      //Exercicio 6
+      function showParagraphs() {
+      let paragraphs = document.getElementsByTagName('p');
+      for (let index = 0; index < paragraphs.length; index += 1) {
+        console.log(paragraphs[index].innerHTML);
+      }
+    }
       /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
