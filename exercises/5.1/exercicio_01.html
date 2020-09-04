@@ -42,6 +42,7 @@
         <button type="button" onclick="afterTwoYears()">Exercicio 1</button>
         <button type="button" onclick="changeBackgroundColor()">Exercicio 2</button>
         <button type="button" onclick="changeBackgroundColor2()">Exercicio 3</button>
+        <button type="button" onclick="titleCorrection()">Exercicio 4</button>
         
       </div>
     </div>
@@ -49,7 +50,8 @@
 
       //Exercicio 1
       function afterTwoYears () {
-        document.getElementsByTagName("p")[0].innerText = "Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor." 
+        let paragraph = document.getElementsByTagName("p")[0]
+        paragraph.innerText = "Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor." 
       }
 
       //Exercicio 2
@@ -64,6 +66,11 @@
         bgDiv2.style.background = "white";
       }
       
+      //Exercicio 4
+      function titleCorrection () {
+        let titleText = document.getElementsByClassName("title")[0];
+        titleText.innerText = "Exercício 5.1 - JavaScript";  
+      }
       
       
       /*
