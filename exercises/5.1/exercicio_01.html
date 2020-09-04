@@ -43,6 +43,7 @@
         <button type="button" onclick="changeBackgroundColor()">Exercicio 2</button>
         <button type="button" onclick="changeBackgroundColor2()">Exercicio 3</button>
         <button type="button" onclick="titleCorrection()">Exercicio 4</button>
+        <button type="button" onclick="textCaps()">Exercicio 5</button>
         
       </div>
     </div>
@@ -72,6 +73,11 @@
         titleText.innerText = "Exercício 5.1 - JavaScript";  
       }
       
+      //Exercicio 5
+      function textCaps () {
+        let paragraph = document.getElementsByTagName("p")[0];
+        paragraph.innerHTML = paragraph.innerHTML.toUpperCase();
+      }
       
       /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
