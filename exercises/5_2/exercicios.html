@@ -56,15 +56,19 @@
     </style>
   </head>
   <body>
-
-    <h1>Exercício 5.2 - JavaScript DOM</h1>
-
-
     <script>
 
-      //Exercício 1:
-      document.querySelector("h1").classList.add("title");
 
+      //Exercício 1:
+      const elementH1 = document.createElement('h1');
+      elementH1.innerHTML = 'Exercício 5.2 - JavaScript DOM';
+      document.body.appendChild(elementH1);
+      elementH1.classList.add('title');
+
+      //Exercício 2:
+      const elementDivMain = document.createElement('div');
+      elementDivMain.className = 'main-content';
+      document.body.appendChild(elementDivMain);
 
       
     </script>
