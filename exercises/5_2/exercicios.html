@@ -95,7 +95,20 @@
       elementPicture.className = 'small-image';
       elementPicture.src = 'https://picsum.photos/200';
       elementDivMain.appendChild(elementPicture);
+
+      //Exercício 8:
+      const elementList = document.createElement('ul');
+      elementDivRight.appendChild(elementList);
       
+      const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+      for ( let num in arrayNumbers ) {
+        const elementLi = document.createElement('li');
+        elementLi.innerHTML = arrayNumbers[num];
+        elementList.appendChild(elementLi);
+
+      }
+
+
     </script>
   </body>
 </html>
