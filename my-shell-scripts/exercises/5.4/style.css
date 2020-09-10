@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+}
+
+header {
+  height: 10vh;
+  text-align: center;
+  border-bottom: 2px solid rgb(121, 121, 121);
+}
+
+#theme-button, #marker-button {
+  display: inline-block;
+  font-size: 3em;
+}
+
+.title {
+  display: inline-block;
+  width: 90vw;
+  margin-top: -5%;
+  font-size: 1.8em;
+}
