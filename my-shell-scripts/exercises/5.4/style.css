@@ -24,33 +24,30 @@ header {
   position: absolute;
   top: 10vh;
   width: 30vw;
-  height: 60vh;
+  height: auto;
   background-color: white;
   border-bottom: 2px solid rgb(121, 121, 121);
   border-right: 2px solid rgb(121, 121, 121);
   transition: width 2s, height 2s, transform 2s;
 }
 
-.element-theme-bg {
+.element-theme-sliders {
+  padding: 5%;
   height: 33%;
-  background-color: red;
+  font-size: 1.5em;
 }
 
-.element-theme-font-size {
-  height: 33%;
-  background-color: green;
-}
-
-.element-theme-font-family {
+.element-theme-squares {
   display: inline-block;
   width: 50%;
   height: 33%;
   background-color: blue;
 }
+#element-slider {
+  height: 5px;
+  width: 90%;
+}
 
-.element-theme-display {
-  display: inline-block;
-  width: 50%;
-  height: 33%;
-  background-color: greenyellow;
+.container {
+  font-size: 1.5em;
 }
