@@ -19,27 +19,19 @@ function elementThemeSliders(elementTheme) {
   // elementThemeSliders.innerHTML = "Cor de fundo";
   // elementSlider(elementThemeSliders);
   elementThemeSliders.innerHTML += "<br><br>Tamanho da letra";
-  elementSlider(elementThemeSliders);
-  let text = document.querySelector(".container");
-  text = elementThemeSliders.value;
-  
-  elementThemeSliders.oninput = function() {
-    console.log(this.value);
-  }
+  elementSlider(elementThemeSliders, "slider-font-size", "slider-font-size-btn");
 }
 
-
-
-function elementSlider(where) {
-  let slider = document.createElement("input");
-  slider.setAttribute("id", "element-slider");
-  slider.setAttribute("type", "range");
-  slider.setAttribute("min", "10");
-  slider.setAttribute("max", "100");
-  slider.setAttribute("value", "60");
+function elementSlider(where, id, btnId) {
+  let slider = document.createElement("div");
+  slider.className = "element-slider";
+  slider.id = id
   where.appendChild(slider);
 
-  return slider;
+  let sliderBtn = document.createElement("span");
+  sliderBtn.className = "element-slider-btn";
+  sliderBtn.id = btnId;
+  slider.appendChild(sliderBtn);
 }
 
 function elementThemeSquares(elementTheme) {
