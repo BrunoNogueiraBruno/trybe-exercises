@@ -15,7 +15,42 @@ header {
 
 .title {
   display: inline-block;
-  width: 90vw;
+  width: 85vw;
   margin-top: -5%;
   font-size: 1.8em;
+}
+
+.element-theme {
+  position: absolute;
+  top: 10vh;
+  width: 30vw;
+  height: 60vh;
+  background-color: white;
+  border-bottom: 2px solid rgb(121, 121, 121);
+  border-right: 2px solid rgb(121, 121, 121);
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.element-theme-bg {
+  height: 33%;
+  background-color: red;
+}
+
+.element-theme-font-size {
+  height: 33%;
+  background-color: green;
+}
+
+.element-theme-font-family {
+  display: inline-block;
+  width: 50%;
+  height: 33%;
+  background-color: blue;
+}
+
+.element-theme-display {
+  display: inline-block;
+  width: 50%;
+  height: 33%;
+  background-color: greenyellow;
 }
