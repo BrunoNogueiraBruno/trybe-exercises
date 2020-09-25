@@ -1,14 +1,14 @@
 body {
-  font-size: larger;
+  font-size: 1.3em;
   margin: 20px;
 }
 
 h1 {
-  font-size: xx-large;
+  font-size: 1.5em;
 }
 
 h2 {
-  font-size: x-large;
+  font-size: 1.4em;
 }
 
 img {
@@ -18,4 +18,28 @@ img {
 
 figure {
   margin: 0px;
+}
+
+@media (min-width: 491px) {
+  body {
+    background-color: rgb(155, 181, 206);
+    font-size: 1.5em;
+    margin: 40px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  img {
+    max-width: 40%;
+  }
+
+  figure {
+    display: flex;
+  }
 }
