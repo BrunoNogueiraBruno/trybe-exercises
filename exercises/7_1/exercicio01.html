@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input id="setNumber" type="number">
+  <button id="start">Fatorar</button>
+  <div id="result"></div>
+
+  <script>
+    const result = document.querySelector('#result');
+    const setNumber = document.querySelector('#setNumber');
+    const btn = document.querySelector('#start');
+
+    btn.addEventListener('click', () => { inputNumber(setNumber.value) });
+
+    const inputNumber = (number) => {
+      let arrayOfNumbers = [];
+      for (let i = 1; i <= number; i += 1) {
+        arrayOfNumbers.push(i);
+      }
+
+      let multiply = 1;
+      for (let i = 0; i < arrayOfNumbers.length; i += 1) {
+        multiply = multiply * arrayOfNumbers[i];
+      }
+        result.innerText = `Resultado: ${multiply}!`;
+    };
+
+  </script>
+</body>
+</html>
