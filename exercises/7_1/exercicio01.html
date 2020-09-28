@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
+  Exercício 1:
   <input id="setNumber" type="number">
-  <button id="start">Fatorar</button>
+  <button id="factorialBtn">Fatorar</button>
   <div id="result"></div>
 
+  <br>
+  Exercício 2:
+  <input id="setPhrase" type="text">
+  <button id="biggerWordBtn">Maior palavra</button>
+  <div id="result2"></div>
+
   <script>
+    //exercício 1:
     const result = document.querySelector('#result');
     const setNumber = document.querySelector('#setNumber');
-    const btn = document.querySelector('#start');
+    const btn = document.querySelector('#factorialBtn');
 
     btn.addEventListener('click', () => { inputNumber(setNumber.value) });
 
@@ -33,6 +43,27 @@
       result.innerText = `Resultado: ${factorial(number)}`;
     };
 
+
+    //exercício 2:
+    const result2 = document.querySelector('#result2');
+    const setPhrase = document.querySelector('#setPhrase');
+    const wordBtn = document.querySelector('#biggerWordBtn');
+
+    wordBtn.addEventListener('click', () => { whatIsBigger(setPhrase.value) });
+
+    const whatIsBigger = (phrase) => {
+      const eachWord = phrase.split(" ");
+
+      let biggerWord = eachWord[0];
+      for (let i = 0; i < eachWord.length; i += 1) {
+        if (eachWord[i].length > biggerWord.length) {
+          biggerWord = eachWord[i];
+        }
+      }
+      result2.innerText = `A maior frase é: ${biggerWord}`;
+    }
+
   </script>
 </body>
+
 </html>
