@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .show-name {
+      background-color: #0fa36b;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 50px;
+    }
+
+    .form-content {
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 1px 5px 10px #888888;
+      color: #0fa36b;
+      display: flex;
+      font-size: x-large;
+      justify-content: center;
+      margin: 20px;
+      padding: 30px;
+      flex-wrap: wrap;
+    }
+
+    .form-content button {
+      background-color: #0fa36b;
+      border: transparent;
+      border-radius: 5px;
+      color: white;
+      height: 2.5rem;
+    }
+
+    .form-content input {
+      border: transparent;
+      border-radius: 5px;
+      box-shadow: 2px 2px 7px#888888;
+      height: 2rem;
+    }
+
+    .form {
+      margin: 10px;
+    }
+
+    .fir-form {
+      display: block;
+    }
+
+    .sec-form {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="show-name">
+    <h1 id="title">Tryber X aqui!</h1>
+  </header>
+
+  <section class="form-content">
+    <div class="form fir-form">
+      <label for="name-tryber">Insira seu nome aqui:</label>
+      <input type="text" id="name-tryber">
+      <button id="change-name">Começar</button>
+    </div>
+    <div class="form sec-form">
+      <label for="skills-tryber">Insira habilidades:</label>
+      <input type="text" id="skills-tryber" placeholder="separe com vírgulas">
+      <button id="add-skills">Adicionar</button>
+    </div>
+
+    <button id="reload" class="sec-form">Voltar</button>
+  </section>
+
+  <script>
+    const title = document.querySelector('#title');
+    const nameTryber = document.querySelector('#name-tryber');
+    const firstForm = document.querySelector('.fir-form');
+    const secondForm = document.querySelector('.sec-form');
+    const reload = document.querySelector('#reload');
+
+    document.querySelector('#change-name')
+      .addEventListener('click', function () {
+        firstForm.style.display = 'none';
+        secondForm.style.display = 'block';
+        reload.style.display = 'block';
+        title.innerText = `Tryber ${nameTryber.value} aqui!`;
+        nameTryber.value = '';
+      });
+
+    const skillsTryber = document.querySelector('#skills-tryber');
+    const addSkills = document.querySelector('#add-skills');
+    let counter = 0;
+    addSkills.addEventListener('click', function () {
+      const arrayOfSkills = skillsTryber.value.split(',');
+      counter += 1;
+
+      if (arrayOfSkills.length < 6) {
+        if (counter === 1) {
+          title.innerHTML += ' Essas são as minhas habilidades:'
+          const formList = document.createElement('ul');
+          formList.setAttribute('id', 'form-list');
+          title.appendChild(formList);
+        }
+        const formList = document.querySelector('#form-list');
+        formList.innerHTML = '';
+
+        for (i in arrayOfSkills) {
+          const skillIndex = document.createElement('li');
+          formList.appendChild(skillIndex);
+          skillIndex.innerHTML = arrayOfSkills[i];
+        }
+        document.querySelector('#skills-tryber').value = '';
+
+      } else {
+        alert('Você tem habilidades demais!');
+      }
+    })
+
+    reload.addEventListener('click', () => document.location.reload(true));
+    
+  </script>
+</body>
+
+</html>
