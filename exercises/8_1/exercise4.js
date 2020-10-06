@@ -109,9 +109,7 @@ const expected_result = [
 ] ;
 
 function booksOrderedByReleaseYearDesc(books) {
-  let listYears = [];
-  books.forEach(index => { listYears.push(index); });
-  listYears = listYears.sort((a, b,) => b.releaseYear - a.releaseYear);
+  let listYears = books.sort((a, b,) => b.releaseYear - a.releaseYear);
   return listYears;
 }
 
