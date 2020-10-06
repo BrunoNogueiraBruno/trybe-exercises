@@ -75,9 +75,7 @@ const expected_result = {
 };
 
 function getNamedBook(books) {
-  const findTitle = books.find((title) => {
-    return title.name.length === 26;
-  })
+  const findTitle = books.find((title) => title.name.length === 26);
   return findTitle;
 }
 
