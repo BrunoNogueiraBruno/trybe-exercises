@@ -63,11 +63,18 @@ const books = [
   },
 ];
 
-const expected_result = false
+const expected_result = false;
 
 function everyoneWasBornOnSecXX(books) {
-  
+  let result;
+  const listBirthYears = books.find((book) => {
+    if (book.author.birthYear < 1900 || book.author.birthYear > 2000) {
+      result = false;
+    } else {
+      result = true;
+    }
+  });
+  return result;
 }
 
-everyoneWasBornOnSecXX(books);
-// assert.equal(everyoneWasBornOnSecXX(), expected_result);
+assert.equal(everyoneWasBornOnSecXX(books), expected_result);
