@@ -37,7 +37,7 @@ const books = [
     genre: 'Ficção Científica',
     author: {
       name: 'Frank Herbert',
-      birthYear: 1920,
+      birthYear: 1890,
     },
     releaseYear: 1965,
   },
@@ -63,16 +63,22 @@ const books = [
   },
 ];
 
-const expected_result = true;
+const expected_result = false;
 
-function someBookWasReleaseOnThe80s(books) {
+function authorUnique(books) {
   let result = false;
-  const listOfReleaseYears = books.some((book) => {
-    if (book.releaseYear > 1979 && book.releaseYear < 1990) {
+  let listBirthYears = [];
+
+  books.forEach(book => {
+    listBirthYears.push(book.author.birthYear);
+  });
+
+  listBirthYears.sort((a, b) => {
+    if (a === b) {
       result = true;
     }
   });
   return result;
 }
 
-assert.equal(someBookWasReleaseOnThe80s(books), expected_result);
+assert.equal(authorUnique(books), expected_result);
